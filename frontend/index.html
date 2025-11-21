@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murf AI Agent Playground</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">Yuna AI</h2>
+      <nav class="sidebar-section">
+        <h3>Menu</h3>
+        <ul>
+          <li class="active">Playground</li>
+          <li>History</li>
+          <li>Settings</li>
+          <li>Agents</li>
+        </ul>
+      </nav>
+      <div class="profile-card compact">
+        <img src="https://i.pravatar.cc/120" alt="profile" />
+        <div>
+          <p class="username">Anamika</p>
+          <span class="role">User</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Layout -->
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h1>Your Playground</h1>
+          <p class="subtitle">Experiment. Try new Features.</p>
+        </div>
+        <div class="top-controls">
+          <button class="secondary-btn" id="resetBtn">Reset Session</button>
+          <button class="record-btn" id="recordBtn">Start Recording</button>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <section class="chat-container">
+          <div class="chat-area" id="chatArea"></div>
+          <div class="input-area">
+            <input
+              id="userInput"
+              type="text"
+              placeholder="Type your message..."
+            />
+            <button id="sendBtn">Send</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Audio element for playback -->
+    <audio id="audioEl" style="display: none"></audio>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>

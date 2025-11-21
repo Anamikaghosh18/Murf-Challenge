@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+python-multipart
+
+# AI + LLM
+openai
+requests
+
+
+# Audio processing
+pydub
+ffmpeg-python
+
+# Validation + utils
+pydantic
+python-dotenv
+
+
+# CORS if frontend separate host
+fastapi[all]
